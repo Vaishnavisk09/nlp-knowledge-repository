@@ -1,476 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NLP Concept Cards</title>
+    <title>NLP Concepts | NLP Knowledge Artifact Repository</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<nav class="navbar">
-
-    <div class="logo">NLP Repository</div>
-
-    <ul class="nav-links">
-
-        <li><a href="../index.html">Home</a></li>
-
-        <li><a href="concepts.html">Concepts</a></li>
-
-        <li><a href="comparison.html">Comparison</a></li>
-
-        <li><a href="workflow.html">Workflow</a></li>
-
-        <li><a href="applications.html">Applications</a></li>
-
-    </ul>
-<section>
-
-<h2>Feature Engineering</h2>
-
-<div class="concept-grid">
-
-<div class="concept-card">
-
-<h3>Bag of Words (BoW)</h3>
-
-<p><strong>Definition:</strong> Represents text using word frequencies.</p>
-
-<p><strong>Purpose:</strong> Converts text into numerical vectors.</p>
-
-<p><strong>Example:</strong> "I love NLP" → [I=1, Love=1, NLP=1]</p>
-
-<p><strong>Advantages:</strong></p>
-
-<ul>
-
-<li>Simple</li>
-
-<li>Easy to implement</li>
-
-</ul>
-
-<p><strong>Limitation:</strong>
-
-Ignores word order.
-
-</p>
-
-</div>
-
-<div class="concept-card">
-
-<h3>N-Grams</h3>
-
-<p><strong>Definition:</strong>
-
-Represents sequences of words.
-
-</p>
-
-<p><strong>Examples:</strong>
-
-Unigram
-
-Bigram
-
-Trigram
-
-</p>
-
-<p><strong>Application:</strong>
-
-Language prediction.
-
-</p>
-
-</div>
-
-<div class="concept-card">
-
-<h3>TF-IDF</h3>
-
-<p><strong>Definition:</strong>
-
-Measures the importance of words.
-
-</p>
-
-<p><strong>Benefit:</strong>
-
-Highlights meaningful keywords.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-    <section>
-
-<h2>Feature Engineering</h2>
-
-<div class="concept-grid">
-
-<div class="concept-card">
-
-<h3>Bag of Words (BoW)</h3>
-
-<p><strong>Definition:</strong> Represents text using word frequencies.</p>
-
-<p><strong>Purpose:</strong> Converts text into numerical vectors.</p>
-
-<p><strong>Example:</strong> "I love NLP" → [I=1, Love=1, NLP=1]</p>
-
-<p><strong>Advantages:</strong></p>
-
-<ul>
-
-<li>Simple</li>
-
-<li>Easy to implement</li>
-
-</ul>
-
-<p><strong>Limitation:</strong>
-
-Ignores word order.
-
-</p>
-
-</div>
-
-<div class="concept-card">
-
-<h3>N-Grams</h3>
-
-<p><strong>Definition:</strong>
-
-Represents sequences of words.
-
-</p>
-
-<p><strong>Examples:</strong>
-
-Unigram
-
-Bigram
-
-Trigram
-
-</p>
-
-<p><strong>Application:</strong>
-
-Language prediction.
-
-</p>
-
-</div>
-
-<div class="concept-card">
-
-<h3>TF-IDF</h3>
-
-<p><strong>Definition:</strong>
-
-Measures the importance of words.
-
-</p>
-    <section>
-
-<h2>Language Representation</h2>
-
-<div class="concept-grid">
-
-<div class="concept-card">
-
-<h3>One-Hot Encoding</h3>
-
-<p><strong>Definition:</strong>
-
-Represents every word using binary vectors.
-
-</p>
-
-<p><strong>Advantage:</strong>
-
-Simple representation.
-
-</p>
-
-<p><strong>Limitation:</strong>
-
-Cannot capture semantic similarity.
-
-</p>
-
-</div>
-
-<div class="concept-card">
-
-<h3>Word2Vec</h3>
-
-<p><strong>Definition:</strong>
-
-Learns dense vector representations of words based on context.
-
-</p>
-
-<p><strong>Advantages:</strong></p>
-
-<ul>
-
-<li>Captures semantic relationships.</li>
-
-<li>Efficient for similarity tasks.</li>
-
-</ul>
-
-</div>
-
-<div class="concept-card">
-
-<h3>FastText</h3>
-
-<p><strong>Definition:</strong>
-
-Represents words using character n-grams.
-
-</p>
-
-<p><strong>Benefit:</strong>
-
-Works well with rare and misspelled words.
-
-</p>
-
-</div>
-
-<div class="concept-card">
-
-<h3>Contextual Embeddings</h3>
-
-<p><strong>Definition:</strong>
-
-Word meaning changes depending on surrounding context.
-
-</p>
-
-<p><strong>Examples:</strong>
-
-BERT
-
-GPT
-
-RoBERTa
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<p><strong>Benefit:</strong>
-
-Highlights meaningful keywords.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-</nav>
-
-<section class="hero small-hero">
-
-<h1>Concept Cards</h1>
-
-<p>
-Understand every fundamental NLP concept with simple explanations,
-examples, advantages, limitations and applications.
-</p>
-
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+            🧠 NLP Repository
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="concepts.html" class="active">Concepts</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="workflow.html">Workflow</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="contribution.html">Contribution</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+
+    </div>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Natural Language Processing Concepts</h1>
+        <p>
+            Comprehensive coverage of essential NLP concepts, preprocessing techniques,
+            feature engineering methods, embeddings, and language models.
+        </p>
+    </div>
 </section>
 
 <section>
+<div class="container">
+<div class="content-grid">
 
-<h2>Text Preprocessing</h2>
+<div class="glass-card content-card reveal">
+<h3>Text Preprocessing</h3>
+<p><strong>Definition:</strong> Process of preparing raw text for analysis.</p>
+<p><strong>Purpose:</strong> Improve text quality.</p>
+<p><strong>Working:</strong> Cleaning, normalization and filtering operations.</p>
+<p><strong>Example:</strong> Removing symbols from tweets.</p>
+<p><strong>Advantages:</strong> Better model accuracy.</p>
+<p><strong>Limitations:</strong> Risk of losing useful information.</p>
+<p><strong>Applications:</strong> Classification, sentiment analysis.</p>
+</div>
 
-<div class="concept-grid">
-
-<div class="concept-card">
-
+<div class="glass-card content-card reveal">
 <h3>Sentence Segmentation</h3>
-
-<p><strong>Definition:</strong> Splits text into individual sentences.</p>
-
-<p><strong>Purpose:</strong> Makes long text easier to process.</p>
-
-<p><strong>Example:</strong> "Hello. How are you?" → Two sentences.</p>
-
-<p><strong>Advantages:</strong></p>
-
-<ul>
-
-<li>Improves document understanding.</li>
-
-<li>Useful for summarization.</li>
-
-</ul>
-
-<p><strong>Applications:</strong> Chatbots, translation, summarization.</p>
-
+<p><strong>Definition:</strong> Dividing text into sentences.</p>
+<p><strong>Purpose:</strong> Identify sentence boundaries.</p>
+<p><strong>Working:</strong> Uses punctuation and linguistic rules.</p>
+<p><strong>Example:</strong> Splitting a paragraph into sentences.</p>
+<p><strong>Advantages:</strong> Improves downstream processing.</p>
+<p><strong>Limitations:</strong> Ambiguous punctuation handling.</p>
+<p><strong>Applications:</strong> Translation and summarization.</p>
 </div>
 
-<div class="concept-card">
-
+<div class="glass-card content-card reveal">
 <h3>Tokenization</h3>
-
-<p><strong>Definition:</strong> Splits sentences into words or tokens.</p>
-
-<p><strong>Purpose:</strong> First step before feature extraction.</p>
-
-<p><strong>Example:</strong>
-
-"I love NLP"
-
-↓
-
-[I, love, NLP]
-
-</p>
-
-<p><strong>Advantages:</strong></p>
-
-<ul>
-
-<li>Easy text processing</li>
-
-<li>Foundation for NLP</li>
-
-</ul>
-
-<p><strong>Applications:</strong>
-
-Search engines
-
-Text analytics
-
-</p>
-
+<p><strong>Definition:</strong> Breaking text into smaller units called tokens.</p>
+<p><strong>Purpose:</strong> Convert text into analyzable units.</p>
+<p><strong>Working:</strong> Separates words, phrases, or symbols.</p>
+<p><strong>Example:</strong> "I love NLP" → I, love, NLP.</p>
+<p><strong>Advantages:</strong> Foundation of NLP pipelines.</p>
+<p><strong>Limitations:</strong> Language-specific challenges.</p>
+<p><strong>Applications:</strong> Search engines, chatbots.</p>
 </div>
 
-<div class="concept-card">
-
+<div class="glass-card content-card reveal">
 <h3>Case Normalization</h3>
-
-<p><strong>Definition:</strong>
-
-Converts all words to lowercase.
-
-</p>
-
-<p><strong>Example:</strong>
-
-APPLE → apple
-
-</p>
-
-<p><strong>Advantage:</strong>
-
-Reduces duplicate words.
-
-</p>
-
+<p><strong>Definition:</strong> Converting text into a consistent case.</p>
+<p><strong>Purpose:</strong> Reduce vocabulary size.</p>
+<p><strong>Working:</strong> Converts uppercase to lowercase.</p>
+<p><strong>Example:</strong> NLP → nlp.</p>
+<p><strong>Advantages:</strong> Simpler analysis.</p>
+<p><strong>Limitations:</strong> May lose proper noun information.</p>
+<p><strong>Applications:</strong> Text classification.</p>
 </div>
 
-<div class="concept-card">
-
+<div class="glass-card content-card reveal">
 <h3>Stop-word Removal</h3>
-
-<p><strong>Definition:</strong>
-
-Removes common words like "the", "is", "and".
-
-</p>
-
-<p><strong>Benefit:</strong>
-
-Improves processing speed.
-
-</p>
-
+<p><strong>Definition:</strong> Removing common words with little meaning.</p>
+<p><strong>Purpose:</strong> Reduce noise.</p>
+<p><strong>Working:</strong> Filters words like "is", "the".</p>
+<p><strong>Example:</strong> The cat is sleeping → cat sleeping.</p>
+<p><strong>Advantages:</strong> Faster processing.</p>
+<p><strong>Limitations:</strong> Context may be lost.</p>
+<p><strong>Applications:</strong> Information retrieval.</p>
 </div>
 
+<div class="glass-card content-card reveal">
+<h3>Stemming</h3>
+<p><strong>Definition:</strong> Reducing words to root forms.</p>
+<p><strong>Purpose:</strong> Normalize word variations.</p>
+<p><strong>Working:</strong> Removes suffixes.</p>
+<p><strong>Example:</strong> Playing → Play.</p>
+<p><strong>Advantages:</strong> Fast and efficient.</p>
+<p><strong>Limitations:</strong> Produces non-dictionary words.</p>
+<p><strong>Applications:</strong> Search systems.</p>
 </div>
 
-</section>
-    <section>
+<div class="glass-card content-card reveal">
+<h3>Lemmatization</h3>
+<p><strong>Definition:</strong> Converts words into meaningful dictionary forms.</p>
+<p><strong>Purpose:</strong> Accurate normalization.</p>
+<p><strong>Working:</strong> Uses vocabulary and grammar.</p>
+<p><strong>Example:</strong> Better → Good.</p>
+<p><strong>Advantages:</strong> Linguistically correct.</p>
+<p><strong>Limitations:</strong> Computationally expensive.</p>
+<p><strong>Applications:</strong> NLP analytics.</p>
+</div>
 
-<h2>Language Models</h2>
+<div class="glass-card content-card reveal">
+<h3>Noise Removal</h3>
+<p><strong>Definition:</strong> Eliminating irrelevant information.</p>
+<p><strong>Purpose:</strong> Improve data quality.</p>
+<p><strong>Working:</strong> Removes symbols, URLs and extra spaces.</p>
+<p><strong>Example:</strong> Removing @mentions.</p>
+<p><strong>Advantages:</strong> Cleaner text.</p>
+<p><strong>Limitations:</strong> Possible loss of context.</p>
+<p><strong>Applications:</strong> Social media analytics.</p>
+</div>
 
-<div class="concept-grid">
+<div class="glass-card content-card reveal">
+<h3>Text Cleaning</h3>
+<p><strong>Definition:</strong> Comprehensive text preparation process.</p>
+<p><strong>Purpose:</strong> Standardize textual data.</p>
+<p><strong>Working:</strong> Removes inconsistencies.</p>
+<p><strong>Example:</strong> Removing punctuation.</p>
+<p><strong>Advantages:</strong> Better model input.</p>
+<p><strong>Limitations:</strong> Task dependent.</p>
+<p><strong>Applications:</strong> Machine learning pipelines.</p>
+</div>
 
-<div class="concept-card">
+<div class="glass-card content-card reveal">
+<h3>Feature Engineering</h3>
+<p><strong>Definition:</strong> Creating useful features from text.</p>
+<p><strong>Purpose:</strong> Improve predictive performance.</p>
+<p><strong>Working:</strong> Converts text into numerical vectors.</p>
+<p><strong>Example:</strong> TF-IDF generation.</p>
+<p><strong>Advantages:</strong> Better learning.</p>
+<p><strong>Limitations:</strong> Requires expertise.</p>
+<p><strong>Applications:</strong> NLP model development.</p>
+</div>
 
+<div class="glass-card content-card reveal">
+<h3>Bag of Words (BoW)</h3>
+<p><strong>Definition:</strong> Represents text using word frequencies.</p>
+<p><strong>Purpose:</strong> Numerical text representation.</p>
+<p><strong>Working:</strong> Counts word occurrences.</p>
+<p><strong>Example:</strong> Frequency vectors.</p>
+<p><strong>Advantages:</strong> Simple implementation.</p>
+<p><strong>Limitations:</strong> Ignores context.</p>
+<p><strong>Applications:</strong> Text classification.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>N-Grams</h3>
+<p><strong>Definition:</strong> Sequence of N consecutive words.</p>
+<p><strong>Purpose:</strong> Capture local context.</p>
+<p><strong>Working:</strong> Generates word combinations.</p>
+<p><strong>Example:</strong> "I love NLP".</p>
+<p><strong>Advantages:</strong> Preserves word order.</p>
+<p><strong>Limitations:</strong> Larger vocabulary.</p>
+<p><strong>Applications:</strong> Language modeling.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>Term Frequency (TF)</h3>
+<p><strong>Definition:</strong> Frequency of a word in a document.</p>
+<p><strong>Purpose:</strong> Measure importance locally.</p>
+<p><strong>Working:</strong> Count divided by total terms.</p>
+<p><strong>Example:</strong> TF value calculation.</p>
+<p><strong>Advantages:</strong> Simple and intuitive.</p>
+<p><strong>Limitations:</strong> Ignores global importance.</p>
+<p><strong>Applications:</strong> Retrieval systems.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>Inverse Document Frequency (IDF)</h3>
+<p><strong>Definition:</strong> Measures rarity across documents.</p>
+<p><strong>Purpose:</strong> Reduce common word importance.</p>
+<p><strong>Working:</strong> Logarithmic calculation.</p>
+<p><strong>Example:</strong> Rare words get higher score.</p>
+<p><strong>Advantages:</strong> Highlights informative terms.</p>
+<p><strong>Limitations:</strong> Corpus dependent.</p>
+<p><strong>Applications:</strong> Search engines.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>TF-IDF</h3>
+<p><strong>Definition:</strong> Combination of TF and IDF.</p>
+<p><strong>Purpose:</strong> Identify important words.</p>
+<p><strong>Working:</strong> TF × IDF.</p>
+<p><strong>Example:</strong> Document ranking.</p>
+<p><strong>Advantages:</strong> Effective weighting.</p>
+<p><strong>Limitations:</strong> No semantic understanding.</p>
+<p><strong>Applications:</strong> Information retrieval.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>Language Representation</h3>
+<p><strong>Definition:</strong> Converting language into machine-readable format.</p>
+<p><strong>Purpose:</strong> Enable computation.</p>
+<p><strong>Working:</strong> Numerical encoding methods.</p>
+<p><strong>Example:</strong> Embeddings.</p>
+<p><strong>Advantages:</strong> Supports machine learning.</p>
+<p><strong>Limitations:</strong> Representation challenges.</p>
+<p><strong>Applications:</strong> AI systems.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>One-Hot Encoding</h3>
+<p><strong>Definition:</strong> Binary vector representation.</p>
+<p><strong>Purpose:</strong> Unique word identification.</p>
+<p><strong>Working:</strong> One active element per word.</p>
+<p><strong>Example:</strong> [0,1,0,0].</p>
+<p><strong>Advantages:</strong> Easy implementation.</p>
+<p><strong>Limitations:</strong> Sparse vectors.</p>
+<p><strong>Applications:</strong> Basic NLP tasks.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>Word Embeddings</h3>
+<p><strong>Definition:</strong> Dense vector representations.</p>
+<p><strong>Purpose:</strong> Capture semantic relationships.</p>
+<p><strong>Working:</strong> Learned from large corpora.</p>
+<p><strong>Example:</strong> Similar words nearby.</p>
+<p><strong>Advantages:</strong> Semantic understanding.</p>
+<p><strong>Limitations:</strong> Static meaning.</p>
+<p><strong>Applications:</strong> NLP models.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>Word2Vec</h3>
+<p><strong>Definition:</strong> Neural embedding technique.</p>
+<p><strong>Purpose:</strong> Learn semantic vectors.</p>
+<p><strong>Working:</strong> CBOW and Skip-Gram models.</p>
+<p><strong>Example:</strong> King − Man + Woman ≈ Queen.</p>
+<p><strong>Advantages:</strong> Efficient training.</p>
+<p><strong>Limitations:</strong> Context independent.</p>
+<p><strong>Applications:</strong> Similarity analysis.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>FastText</h3>
+<p><strong>Definition:</strong> Embedding model using subwords.</p>
+<p><strong>Purpose:</strong> Better handling of rare words.</p>
+<p><strong>Working:</strong> Character n-gram embeddings.</p>
+<p><strong>Example:</strong> Unknown word prediction.</p>
+<p><strong>Advantages:</strong> Handles morphology.</p>
+<p><strong>Limitations:</strong> Larger models.</p>
+<p><strong>Applications:</strong> Multilingual NLP.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>Contextual Embeddings</h3>
+<p><strong>Definition:</strong> Dynamic word representations.</p>
+<p><strong>Purpose:</strong> Understand context.</p>
+<p><strong>Working:</strong> Uses surrounding words.</p>
+<p><strong>Example:</strong> BERT embeddings.</p>
+<p><strong>Advantages:</strong> Higher accuracy.</p>
+<p><strong>Limitations:</strong> Computational cost.</p>
+<p><strong>Applications:</strong> Question answering.</p>
+</div>
+
+<div class="glass-card content-card reveal">
+<h3>Language Models</h3>
+<p><strong>Definition:</strong> Predict next words in text.</p>
+<p><strong>Purpose:</strong> Understand language patterns.</p>
+<p><strong>Working:</strong> Probability estimation.</p>
+<p><strong>Example:</strong> Text generation.</p>
+<p><strong>Advantages:</strong> Broad applications.</p>
+<p><strong>Limitations:</strong> Data dependency.</p>
+<p><strong>Applications:</strong> AI assistants.</p>
+</div>
+
+<div class="glass-card content-card reveal">
 <h3>Statistical Language Models</h3>
-
-<p>Predict the next word using probability.</p>
-
+<p><strong>Definition:</strong> Probability-based language models.</p>
+<p><strong>Purpose:</strong> Predict word sequences.</p>
+<p><strong>Working:</strong> N-gram probabilities.</p>
+<p><strong>Example:</strong> Bigram model.</p>
+<p><strong>Advantages:</strong> Simple mathematics.</p>
+<p><strong>Limitations:</strong> Sparse data issues.</p>
+<p><strong>Applications:</strong> Speech recognition.</p>
 </div>
 
-<div class="concept-card">
-
+<div class="glass-card content-card reveal">
 <h3>Neural Language Models</h3>
-
-<p>Use neural networks to learn language patterns.</p>
-
+<p><strong>Definition:</strong> Deep learning-based models.</p>
+<p><strong>Purpose:</strong> Better language understanding.</p>
+<p><strong>Working:</strong> Neural network training.</p>
+<p><strong>Example:</strong> LSTM models.</p>
+<p><strong>Advantages:</strong> Better performance.</p>
+<p><strong>Limitations:</strong> Resource intensive.</p>
+<p><strong>Applications:</strong> Translation systems.</p>
 </div>
 
-<div class="concept-card">
-
+<div class="glass-card content-card reveal">
 <h3>Transformer Models</h3>
-
-<p>Modern architecture using self-attention for highly accurate NLP tasks.</p>
-
-<p><strong>Examples:</strong>
-
-BERT
-
-GPT
-
-T5
-
-</p>
-
+<p><strong>Definition:</strong> Attention-based neural architectures.</p>
+<p><strong>Purpose:</strong> Efficient sequence modeling.</p>
+<p><strong>Working:</strong> Self-attention mechanism.</p>
+<p><strong>Example:</strong> GPT and BERT.</p>
+<p><strong>Advantages:</strong> State-of-the-art accuracy.</p>
+<p><strong>Limitations:</strong> High computational cost.</p>
+<p><strong>Applications:</strong> Modern NLP systems.</p>
 </div>
 
 </div>
-
+</div>
 </section>
 
-<footer>
-
-<h2>NLP Knowledge Repository</h2>
-
-<p>Concept Cards Page</p>
-
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2026 NLP Knowledge Artifact Repository</p>
+    </div>
 </footer>
+
+<button id="backToTop" class="back-to-top">↑</button>
 
 <script src="../script.js"></script>
 
 </body>
-
 </html>
