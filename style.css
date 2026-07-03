@@ -566,5 +566,78 @@ margin:10px;
     transform:scale(1.1);
 
 }
+/*==========================
+CONCEPT PAGE
+===========================*/
+
+.small-hero{
+
+height:45vh;
+
+}
+
+.concept-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.concept-card{
+
+background:#1E293B;
+
+padding:30px;
+
+border-radius:20px;
+
+transition:.3s;
+
+border-top:5px solid #38BDF8;
+
+}
+
+.concept-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.35);
+
+}
+
+.concept-card h3{
+
+color:#38BDF8;
+
+margin-bottom:20px;
+
+}
+
+.concept-card p{
+
+margin-bottom:15px;
+
+color:#CBD5E1;
+
+}
+
+.concept-card ul{
+
+margin-left:20px;
+
+margin-bottom:15px;
+
+}
+
+.concept-card li{
+
+margin-bottom:8px;
+
+}
 
 
