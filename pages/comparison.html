@@ -1,1 +1,390 @@
-<h1>Comparison</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison | NLP Knowledge Artifact Repository</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+            🧠 NLP Repository
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="concepts.html">Concepts</a></li>
+                <li><a href="comparison.html" class="active">Comparison</a></li>
+                <li><a href="workflow.html">Workflow</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="contribution.html">Contribution</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+
+    </div>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1>NLP Technique Comparison</h1>
+        <p>
+            Comparative analysis of important NLP techniques, representations,
+            embeddings, and language modeling approaches.
+        </p>
+    </div>
+</section>
+
+<section>
+<div class="container">
+
+    <div class="glass-card content-card reveal">
+        <h2>Stemming vs Lemmatization</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Stemming</th>
+                    <th>Lemmatization</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Definition</td>
+                    <td>Removes prefixes and suffixes to obtain root words.</td>
+                    <td>Converts words into meaningful dictionary forms.</td>
+                </tr>
+
+                <tr>
+                    <td>Method</td>
+                    <td>Rule-based truncation.</td>
+                    <td>Vocabulary and grammar based.</td>
+                </tr>
+
+                <tr>
+                    <td>Output</td>
+                    <td>May produce non-dictionary words.</td>
+                    <td>Produces valid words.</td>
+                </tr>
+
+                <tr>
+                    <td>Speed</td>
+                    <td>Faster.</td>
+                    <td>Slower.</td>
+                </tr>
+
+                <tr>
+                    <td>Accuracy</td>
+                    <td>Lower.</td>
+                    <td>Higher.</td>
+                </tr>
+
+                <tr>
+                    <td>Example</td>
+                    <td>Playing → Play</td>
+                    <td>Better → Good</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <div class="glass-card content-card reveal">
+        <h2>Bag of Words (BoW) vs TF-IDF</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Bag of Words</th>
+                    <th>TF-IDF</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Definition</td>
+                    <td>Represents text using word frequency counts.</td>
+                    <td>Weights words based on importance.</td>
+                </tr>
+
+                <tr>
+                    <td>Context Awareness</td>
+                    <td>No.</td>
+                    <td>No.</td>
+                </tr>
+
+                <tr>
+                    <td>Weighting</td>
+                    <td>Equal importance.</td>
+                    <td>Importance-based weighting.</td>
+                </tr>
+
+                <tr>
+                    <td>Rare Words</td>
+                    <td>Not emphasized.</td>
+                    <td>Highly emphasized.</td>
+                </tr>
+
+                <tr>
+                    <td>Complexity</td>
+                    <td>Simple.</td>
+                    <td>Moderate.</td>
+                </tr>
+
+                <tr>
+                    <td>Applications</td>
+                    <td>Basic text classification.</td>
+                    <td>Search engines and ranking.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <div class="glass-card content-card reveal">
+        <h2>Word2Vec vs FastText</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Word2Vec</th>
+                    <th>FastText</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Representation</td>
+                    <td>Word-level embeddings.</td>
+                    <td>Word + subword embeddings.</td>
+                </tr>
+
+                <tr>
+                    <td>Unknown Words</td>
+                    <td>Poor handling.</td>
+                    <td>Good handling.</td>
+                </tr>
+
+                <tr>
+                    <td>Morphology</td>
+                    <td>Limited.</td>
+                    <td>Strong support.</td>
+                </tr>
+
+                <tr>
+                    <td>Training Speed</td>
+                    <td>Fast.</td>
+                    <td>Slightly slower.</td>
+                </tr>
+
+                <tr>
+                    <td>Vocabulary Dependency</td>
+                    <td>High.</td>
+                    <td>Lower.</td>
+                </tr>
+
+                <tr>
+                    <td>Applications</td>
+                    <td>Semantic similarity.</td>
+                    <td>Multilingual systems.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <div class="glass-card content-card reveal">
+        <h2>One-Hot Encoding vs Word Embeddings</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>One-Hot Encoding</th>
+                    <th>Word Embeddings</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Representation</td>
+                    <td>Sparse vectors.</td>
+                    <td>Dense vectors.</td>
+                </tr>
+
+                <tr>
+                    <td>Semantic Meaning</td>
+                    <td>Not captured.</td>
+                    <td>Captured.</td>
+                </tr>
+
+                <tr>
+                    <td>Memory Usage</td>
+                    <td>High.</td>
+                    <td>Efficient.</td>
+                </tr>
+
+                <tr>
+                    <td>Scalability</td>
+                    <td>Limited.</td>
+                    <td>High.</td>
+                </tr>
+
+                <tr>
+                    <td>Vocabulary Size</td>
+                    <td>Large vectors.</td>
+                    <td>Compact vectors.</td>
+                </tr>
+
+                <tr>
+                    <td>Applications</td>
+                    <td>Basic ML models.</td>
+                    <td>Modern NLP systems.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <div class="glass-card content-card reveal">
+        <h2>Statistical vs Neural Language Models</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Statistical Language Models</th>
+                    <th>Neural Language Models</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Approach</td>
+                    <td>Probability based.</td>
+                    <td>Deep learning based.</td>
+                </tr>
+
+                <tr>
+                    <td>Examples</td>
+                    <td>N-Gram Models.</td>
+                    <td>LSTM, Transformer.</td>
+                </tr>
+
+                <tr>
+                    <td>Context Handling</td>
+                    <td>Limited.</td>
+                    <td>Strong.</td>
+                </tr>
+
+                <tr>
+                    <td>Accuracy</td>
+                    <td>Moderate.</td>
+                    <td>High.</td>
+                </tr>
+
+                <tr>
+                    <td>Resource Requirement</td>
+                    <td>Low.</td>
+                    <td>High.</td>
+                </tr>
+
+                <tr>
+                    <td>Applications</td>
+                    <td>Speech recognition.</td>
+                    <td>LLMs, Chatbots, Translation.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<footer class="footer">
+
+    <div class="footer-content container">
+
+        <div>
+            <h3>NLP Knowledge Artifact Repository</h3>
+            <p>
+                Professional comparison of NLP techniques,
+                embeddings and language modeling approaches.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="workflow.html">Workflow</a>
+            <a href="applications.html">Applications</a>
+            <a href="research.html">Research</a>
+            <a href="references.html">References</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 NLP Knowledge Artifact Repository</p>
+    </div>
+
+</footer>
+
+<button id="backToTop" class="back-to-top">↑</button>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
