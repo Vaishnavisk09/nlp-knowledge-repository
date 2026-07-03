@@ -1,421 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>NLP Knowledge Artifact Repository</title>
-
+    <meta name="description" content="Comprehensive NLP Knowledge Artifact Repository covering concepts, workflows, applications, research trends, sustainability, and references.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
 
-    <!-- Navigation Bar -->
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
 
-    <nav class="navbar">
-
-        <div class="logo">
-            NLP Repository
-        </div>
-
-        <ul class="nav-links">
-
-            <li><a href="#">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#topics">Topics</a></li>
-
-            <li><a href="#roadmap">Roadmap</a></li>
-
-            <li><a href="#footer">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-
-    <!-- Hero Section -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>
-                Natural Language Processing
-            </h1>
-
-            <h2>
-                Knowledge Artifact Repository
-            </h2>
-
-            <p>
-
-                A complete learning repository covering
-                Text Preprocessing, Feature Engineering,
-                Language Representation and Language Models.
-
-            </p>
-
-            <a href="#topics" class="btn">
-                Explore Repository
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🧠</span>
+                NLP Repository
             </a>
 
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/concepts.html">Concepts</a></li>
+                    <li><a href="pages/comparison.html">Comparison</a></li>
+                    <li><a href="pages/workflow.html">Workflow</a></li>
+                    <li><a href="pages/applications.html">Applications</a></li>
+                    <li><a href="pages/research.html">Research</a></li>
+                    <li><a href="pages/sustainability.html">Sustainability</a></li>
+                    <li><a href="pages/contribution.html">Contribution</a></li>
+                    <li><a href="pages/references.html">References</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu-toggle" class="menu-toggle">
+                ☰
+            </button>
         </div>
+    </header>
 
-    </section>
+    <main>
 
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="hero-badge">Artificial Intelligence • NLP • Knowledge Hub</span>
 
-    <!-- About -->
+                    <h1>
+                        NLP Knowledge
+                        <span>Artifact Repository</span>
+                    </h1>
 
-    <section id="about" class="about">
+                    <p>
+                        A professional academic repository dedicated to Natural Language Processing,
+                        language representation, machine learning workflows, transformer architectures,
+                        modern Large Language Models, and sustainable AI-driven applications.
+                    </p>
 
-        <h2>About This Repository</h2>
+                    <div class="hero-buttons">
+                        <a href="pages/concepts.html" class="btn btn-primary">Explore Concepts</a>
+                        <a href="pages/research.html" class="btn btn-secondary">Latest Research</a>
+                    </div>
+                </div>
 
-        <p>
+                <div class="hero-visual reveal">
+                    <div class="glass-card ai-card">
+                        <div class="node node-1">Text</div>
+                        <div class="node node-2">Tokens</div>
+                        <div class="node node-3">Embeddings</div>
+                        <div class="node node-4">Transformer</div>
+                        <div class="node node-5">Prediction</div>
 
-            This website is developed as a Knowledge Artifact Repository
-            for Week 1 of the Natural Language Processing course.
+                        <div class="line l1"></div>
+                        <div class="line l2"></div>
+                        <div class="line l3"></div>
+                        <div class="line l4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            It provides structured learning materials including concept
-            cards, comparison tables, workflow diagrams,
-            industrial applications, research insights and sustainability
-            impact of NLP.
+        <section class="stats-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Repository Statistics</h2>
+                    <p>Comprehensive coverage of modern Natural Language Processing topics.</p>
+                </div>
 
-            The repository is designed to help beginners understand
-            fundamental NLP concepts through examples,
-            illustrations and practical applications.
+                <div class="stats-grid">
 
-        </p>
+                    <div class="glass-card stat-card reveal">
+                        <h3>25+</h3>
+                        <p>NLP Concepts</p>
+                    </div>
 
-    </section>
+                    <div class="glass-card stat-card reveal">
+                        <h3>5</h3>
+                        <p>Industry Applications</p>
+                    </div>
 
+                    <div class="glass-card stat-card reveal">
+                        <h3>3</h3>
+                        <p>Workflow Models</p>
+                    </div>
 
+                    <div class="glass-card stat-card reveal">
+                        <h3>100%</h3>
+                        <p>Academic Focus</p>
+                    </div>
 
-    <!-- Statistics -->
+                </div>
+            </div>
+        </section>
 
-    <section class="stats">
+        <section class="features-section">
+            <div class="container">
 
-        <div class="card">
+                <div class="section-title reveal">
+                    <h2>Core Knowledge Areas</h2>
+                    <p>Explore the complete NLP ecosystem from preprocessing to advanced language models.</p>
+                </div>
 
-            <h2>24+</h2>
+                <div class="card-grid">
 
-            <p>NLP Concepts</p>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon">📘</div>
+                        <h3>Fundamental Concepts</h3>
+                        <p>
+                            Learn tokenization, preprocessing, stemming, lemmatization,
+                            feature engineering, TF-IDF, embeddings, and language modeling.
+                        </p>
+                    </div>
 
-        </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon">📊</div>
+                        <h3>Comparative Analysis</h3>
+                        <p>
+                            Understand differences between classic and modern NLP techniques
+                            using structured comparison tables and performance insights.
+                        </p>
+                    </div>
 
-        <div class="card">
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon">⚙️</div>
+                        <h3>Workflow Architecture</h3>
+                        <p>
+                            Visualize complete NLP pipelines and transformer-based processing
+                            workflows through interactive diagrams.
+                        </p>
+                    </div>
 
-            <h2>5</h2>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon">💬</div>
+                        <h3>Applications</h3>
+                        <p>
+                            Discover real-world NLP solutions including chatbots, translation,
+                            summarization, spam filtering, and sentiment analysis.
+                        </p>
+                    </div>
 
-            <p>Applications</p>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Research Trends</h3>
+                        <p>
+                            Explore Large Language Models, GPT, BERT, Retrieval-Augmented
+                            Generation, multimodal AI, and future innovations.
+                        </p>
+                    </div>
 
-        </div>
+                    <div class="glass-card feature-card reveal">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Sustainable AI</h3>
+                        <p>
+                            Study the impact of NLP in healthcare, education,
+                            accessibility, and regional language preservation.
+                        </p>
+                    </div>
 
-        <div class="card">
-
-            <h2>5</h2>
-
-            <p>Comparisons</p>
-
-        </div>
-
-        <div class="card">
-
-            <h2>3</h2>
-
-            <p>Workflow Diagrams</p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- Topics -->
-
-    <section id="topics" class="topics">
-
-        <h2>Topics Covered</h2>
-
-        <div class="topic-grid">
-
-            <div class="topic-card">
-
-                <h3>Text Preprocessing</h3>
-
-                <p>
-
-                    Sentence Segmentation
-
-                    <br>
-
-                    Tokenization
-
-                    <br>
-
-                    Case Normalization
-
-                    <br>
-
-                    Stop-word Removal
-
-                    <br>
-
-                    Stemming
-
-                    <br>
-
-                    Lemmatization
-
-                    <br>
-
-                    Noise Removal
-
-                    <br>
-
-                    Text Cleaning
-
-                </p>
+                </div>
 
             </div>
+        </section>
 
-            <div class="topic-card">
+        <section class="timeline-section">
+            <div class="container">
 
-                <h3>Feature Engineering</h3>
+                <div class="section-title reveal">
+                    <h2>Evolution of NLP</h2>
+                    <p>Major milestones in Natural Language Processing development.</p>
+                </div>
 
-                <p>
+                <div class="timeline">
 
-                    Bag of Words
+                    <div class="timeline-item reveal">
+                        <div class="timeline-content glass-card">
+                            <h3>1950s</h3>
+                            <p>
+                                Early computational linguistics and machine translation
+                                research begin.
+                            </p>
+                        </div>
+                    </div>
 
-                    <br>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-content glass-card">
+                            <h3>1990s</h3>
+                            <p>
+                                Statistical language models and probabilistic approaches
+                                become dominant.
+                            </p>
+                        </div>
+                    </div>
 
-                    N-Grams
+                    <div class="timeline-item reveal">
+                        <div class="timeline-content glass-card">
+                            <h3>2013</h3>
+                            <p>
+                                Word2Vec introduces efficient neural word embeddings and
+                                semantic representation.
+                            </p>
+                        </div>
+                    </div>
 
-                    <br>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-content glass-card">
+                            <h3>2017</h3>
+                            <p>
+                                Transformer architecture revolutionizes sequence modeling
+                                and attention mechanisms.
+                            </p>
+                        </div>
+                    </div>
 
-                    TF
+                    <div class="timeline-item reveal">
+                        <div class="timeline-content glass-card">
+                            <h3>Today</h3>
+                            <p>
+                                Large Language Models, multimodal AI, and generative
+                                systems power intelligent applications worldwide.
+                            </p>
+                        </div>
+                    </div>
 
-                    <br>
-
-                    IDF
-
-                    <br>
-
-                    TF-IDF
-
-                </p>
-
-            </div>
-
-            <div class="topic-card">
-
-                <h3>Language Representation</h3>
-
-                <p>
-
-                    One-Hot Encoding
-
-                    <br>
-
-                    Word Embeddings
-
-                    <br>
-
-                    Word2Vec
-
-                    <br>
-
-                    FastText
-
-                    <br>
-
-                    Contextual Embeddings
-
-                </p>
-
-            </div>
-
-            <div class="topic-card">
-
-                <h3>Language Models</h3>
-
-                <p>
-
-                    Statistical Models
-
-                    <br>
-
-                    Neural Models
-
-                    <br>
-
-                    Transformer Representations
-
-                </p>
+                </div>
 
             </div>
+        </section>
+
+        <section class="overview-section">
+            <div class="container">
+
+                <div class="section-title reveal">
+                    <h2>Repository Overview</h2>
+                    <p>A centralized academic resource for NLP learning and research.</p>
+                </div>
+
+                <div class="overview-grid">
+
+                    <div class="glass-card reveal">
+                        <h3>Knowledge Repository</h3>
+                        <p>
+                            This repository provides structured educational content covering
+                            foundational NLP concepts, modern transformer models, embeddings,
+                            feature extraction techniques, industrial applications, and
+                            emerging AI trends.
+                        </p>
+                    </div>
+
+                    <div class="glass-card reveal">
+                        <h3>Academic Value</h3>
+                        <p>
+                            Designed for students, educators, and researchers seeking
+                            reliable information about Natural Language Processing,
+                            machine learning workflows, and language understanding systems.
+                        </p>
+                    </div>
+
+                    <div class="glass-card reveal">
+                        <h3>Industry Relevance</h3>
+                        <p>
+                            Modern organizations rely on NLP for automation,
+                            communication intelligence, customer support, content analysis,
+                            and advanced AI-driven decision making.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <h3>NLP Knowledge Artifact Repository</h3>
+                <p>
+                    Comprehensive educational repository for Natural Language Processing,
+                    Artificial Intelligence, and Language Technologies.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="pages/concepts.html">Concepts</a>
+                <a href="pages/comparison.html">Comparison</a>
+                <a href="pages/workflow.html">Workflow</a>
+                <a href="pages/applications.html">Applications</a>
+                <a href="pages/research.html">Research</a>
+                <a href="pages/sustainability.html">Sustainability</a>
+                <a href="pages/contribution.html">Contribution</a>
+                <a href="pages/references.html">References</a>
+            </div>
 
         </div>
 
-    </section>
-<!-- ===========================
-     Repository Highlights
-============================ -->
-
-<section class="highlights">
-
-    <h2>Repository Highlights</h2>
-
-    <div class="highlight-grid">
-
-        <div class="highlight-card">
-            <h3>📚 Concept Cards</h3>
-            <p>Clear explanations of every Week 1 NLP concept with definitions, examples, advantages, limitations, and applications.</p>
+        <div class="footer-bottom">
+            <p>
+                © 2026 NLP Knowledge Artifact Repository | Academic Knowledge Portal
+            </p>
         </div>
+    </footer>
 
-        <div class="highlight-card">
-            <h3>📊 Comparative Analysis</h3>
-            <p>Understand the differences between NLP techniques using professional comparison tables.</p>
-        </div>
+    <button id="backToTop" class="back-to-top">
+        ↑
+    </button>
 
-        <div class="highlight-card">
-            <h3>🔄 Workflow Diagrams</h3>
-            <p>Visual learning pipelines for preprocessing, feature engineering, and text vectorization.</p>
-        </div>
-
-        <div class="highlight-card">
-            <h3>🌍 Applications</h3>
-            <p>Explore how NLP is used in chatbots, search engines, sentiment analysis, translation, and summarization.</p>
-        </div>
-
-        <div class="highlight-card">
-            <h3>🔬 Research</h3>
-            <p>Recent developments, industrial applications, and open-source NLP frameworks.</p>
-        </div>
-
-        <div class="highlight-card">
-            <h3>🌱 Sustainability</h3>
-            <p>Learn how NLP supports education, accessibility, regional languages, and sustainable development.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-     Learning Roadmap
-============================ -->
-
-<section class="roadmap" id="roadmap">
-
-    <h2>Learning Roadmap</h2>
-
-    <div class="roadmap-container">
-
-        <div class="step">Raw Text</div>
-
-        <div class="arrow">➜</div>
-
-        <div class="step">Text Cleaning</div>
-
-        <div class="arrow">➜</div>
-
-        <div class="step">Tokenization</div>
-
-        <div class="arrow">➜</div>
-
-        <div class="step">Feature Engineering</div>
-
-        <div class="arrow">➜</div>
-
-        <div class="step">Word Embeddings</div>
-
-        <div class="arrow">➜</div>
-
-        <div class="step">Language Models</div>
-
-        <div class="arrow">➜</div>
-
-        <div class="step">Real-World Applications</div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-     Quick Navigation
-============================ -->
-
-<section class="quick-links">
-
-    <h2>Explore Repository</h2>
-
-    <div class="quick-grid">
-
-        <a href="pages/concepts.html" class="quick-card">
-            📘
-            <h3>Concept Cards</h3>
-        </a>
-
-        <a href="pages/comparison.html" class="quick-card">
-            📊
-            <h3>Comparisons</h3>
-        </a>
-
-        <a href="pages/workflow.html" class="quick-card">
-            🔄
-            <h3>Workflows</h3>
-        </a>
-
-        <a href="pages/applications.html" class="quick-card">
-            🌍
-            <h3>Applications</h3>
-        </a>
-
-        <a href="pages/research.html" class="quick-card">
-            🔬
-            <h3>Research</h3>
-        </a>
-
-        <a href="pages/sustainability.html" class="quick-card">
-            🌱
-            <h3>Sustainability</h3>
-        </a>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-     Footer
-============================ -->
-
-<footer id="footer">
-
-    <h2>NLP Knowledge Artifact Repository</h2>
-
-    <p>
-        Natural Language Processing – Week 1 Knowledge Repository
-    </p>
-
-    <p>
-        Developed using HTML, CSS and JavaScript • Hosted on GitHub Pages
-    </p>
-
-    <p>
-        © 2026 | TY B.Tech NLP Project
-    </p>
-
-</footer>
     <script src="script.js"></script>
 
 </body>
-
 </html>
