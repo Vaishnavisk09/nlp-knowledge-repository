@@ -1,13 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Concept Cards</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Concept Cards</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+<nav class="navbar">
+
+    <div class="logo">NLP Repository</div>
+
+    <ul class="nav-links">
+
+        <li><a href="../index.html">Home</a></li>
+
+        <li><a href="concepts.html">Concepts</a></li>
+
+        <li><a href="comparison.html">Comparison</a></li>
+
+        <li><a href="workflow.html">Workflow</a></li>
+
+        <li><a href="applications.html">Applications</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero small-hero">
 
 <h1>Concept Cards</h1>
 
-<p>This page will contain all NLP concept cards.</p>
+<p>
+Understand every fundamental NLP concept with simple explanations,
+examples, advantages, limitations and applications.
+</p>
+
+</section>
+
+<section>
+
+<h2>Text Preprocessing</h2>
+
+<div class="concept-grid">
+
+<div class="concept-card">
+
+<h3>Sentence Segmentation</h3>
+
+<p><strong>Definition:</strong> Splits text into individual sentences.</p>
+
+<p><strong>Purpose:</strong> Makes long text easier to process.</p>
+
+<p><strong>Example:</strong> "Hello. How are you?" → Two sentences.</p>
+
+<p><strong>Advantages:</strong></p>
+
+<ul>
+
+<li>Improves document understanding.</li>
+
+<li>Useful for summarization.</li>
+
+</ul>
+
+<p><strong>Applications:</strong> Chatbots, translation, summarization.</p>
+
+</div>
+
+<div class="concept-card">
+
+<h3>Tokenization</h3>
+
+<p><strong>Definition:</strong> Splits sentences into words or tokens.</p>
+
+<p><strong>Purpose:</strong> First step before feature extraction.</p>
+
+<p><strong>Example:</strong>
+
+"I love NLP"
+
+↓
+
+[I, love, NLP]
+
+</p>
+
+<p><strong>Advantages:</strong></p>
+
+<ul>
+
+<li>Easy text processing</li>
+
+<li>Foundation for NLP</li>
+
+</ul>
+
+<p><strong>Applications:</strong>
+
+Search engines
+
+Text analytics
+
+</p>
+
+</div>
+
+<div class="concept-card">
+
+<h3>Case Normalization</h3>
+
+<p><strong>Definition:</strong>
+
+Converts all words to lowercase.
+
+</p>
+
+<p><strong>Example:</strong>
+
+APPLE → apple
+
+</p>
+
+<p><strong>Advantage:</strong>
+
+Reduces duplicate words.
+
+</p>
+
+</div>
+
+<div class="concept-card">
+
+<h3>Stop-word Removal</h3>
+
+<p><strong>Definition:</strong>
+
+Removes common words like "the", "is", "and".
+
+</p>
+
+<p><strong>Benefit:</strong>
+
+Improves processing speed.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>NLP Knowledge Repository</h2>
+
+<p>Concept Cards Page</p>
+
+</footer>
+
+<script src="../script.js"></script>
 
 </body>
+
 </html>
