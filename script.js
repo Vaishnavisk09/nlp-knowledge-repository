@@ -1,51 +1,31 @@
-// ===================================
+// =========================
 // NLP Knowledge Artifact Repository
 // script.js
-// ===================================
+// =========================
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // ==========================
-    // Mobile Navigation
-    // ==========================
-
-    const menuBtn = document.getElementById("menu-toggle");
+    // Mobile Menu
+    const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
-    if (menuBtn && navLinks) {
-
-        menuBtn.addEventListener("click", () => {
-
-            if (navLinks.style.display === "flex") {
-                navLinks.style.display = "none";
-            } else {
-                navLinks.style.display = "flex";
-                navLinks.style.flexDirection = "column";
-                navLinks.style.position = "absolute";
-                navLinks.style.top = "70px";
-                navLinks.style.right = "20px";
-                navLinks.style.padding = "20px";
-                navLinks.style.borderRadius = "15px";
-                navLinks.style.background = "rgba(15,23,42,0.95)";
-                navLinks.style.backdropFilter = "blur(15px)";
-                navLinks.style.gap = "15px";
-                navLinks.style.zIndex = "999";
-            }
-
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
         });
 
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("show");
+            });
+        });
     }
 
-    // ==========================
-    // Reveal Animation
-    // ==========================
-
+    // Scroll Reveal Animation
     const revealElements = document.querySelectorAll(".reveal");
 
-    function revealOnScroll() {
-
-        revealElements.forEach((element) => {
-
+    const revealOnScroll = () => {
+        revealElements.forEach(element => {
             const windowHeight = window.innerHeight;
             const revealTop = element.getBoundingClientRect().top;
             const revealPoint = 100;
@@ -53,198 +33,148 @@ document.addEventListener("DOMContentLoaded", () => {
             if (revealTop < windowHeight - revealPoint) {
                 element.classList.add("active");
             }
-
         });
-
-    }
+    };
 
     window.addEventListener("scroll", revealOnScroll);
-
     revealOnScroll();
 
-    // ==========================
     // Back To Top Button
-    // ==========================
-
     const backToTop = document.getElementById("backToTop");
 
+    const toggleBackToTop = () => {
+        if (!backToTop) return;
+
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    };
+
+    window.addEventListener("scroll", toggleBackToTop);
+    toggleBackToTop();
+
     if (backToTop) {
-
-        window.addEventListener("scroll", () => {
-
-            if (window.scrollY > 300) {
-                backToTop.style.display = "block";
-            } else {
-                backToTop.style.display = "none";
-            }
-
-        });
-
         backToTop.addEventListener("click", () => {
-
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
-
         });
-
     }
 
-    // ==========================
-    // Counter Animation
-    // ==========================
+    // Active Navbar Highlight
+    const currentPage = window.location.pathname.split("/").pop();
 
-    const counters = document.querySelectorAll(".counter");
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        const href = link.getAttribute("href");
 
-    counters.forEach(counter => {
-
-        const updateCounter = () => {
-
-            const target = +counter.getAttribute("data-target");
-            const current = +counter.innerText;
-
-            const increment = target / 100;
-
-            if (current < target) {
-
-                counter.innerText = Math.ceil(current + increment);
-
-                setTimeout(updateCounter, 20);
-
-            } else {
-
-                counter.innerText = target;
-
-            }
-
-        };
-
-        updateCounter();
-
+        if (
+            href === currentPage ||
+            (currentPage === "" && href === "index.html")
+        ) {
+            link.classList.add("active");
+        }
     });
 
-    // ==========================
-    // Card Hover Glow Effect
-    // ==========================
-
-    const cards = document.querySelectorAll(".glass-card");
+    // Smooth Hover Animation for Cards
+    const cards = document.querySelectorAll(
+        ".glass-card, .feature-card, .content-card, .stat-card"
+    );
 
     cards.forEach(card => {
-
         card.addEventListener("mouseenter", () => {
-
-            card.style.transform = "translateY(-10px) scale(1.02)";
-
+            card.style.transform = "translateY(-8px)";
         });
 
         card.addEventListener("mouseleave", () => {
-
-            card.style.transform = "translateY(0) scale(1)";
-
+            card.style.transform = "translateY(0)";
         });
-
     });
 
-    // ==========================
-    // Smooth Scroll for Anchors
-    // ==========================
+    // Animated Counter for Statistics
+    const counters = document.querySelectorAll(".stat-card h3");
 
-    const links = document.querySelectorAll('a[href^="#"]');
+    const animateCounter = (element, targetValue, suffix = "") => {
+        let count = 0;
+        const increment = Math.ceil(targetValue / 60);
 
-    links.forEach(link => {
+        const timer = setInterval(() => {
+            count += increment;
 
-        link.addEventListener("click", function (e) {
-
-            const targetId = this.getAttribute("href");
-
-            if (targetId !== "#") {
-
-                e.preventDefault();
-
-                const targetSection = document.querySelector(targetId);
-
-                if (targetSection) {
-
-                    targetSection.scrollIntoView({
-                        behavior: "smooth"
-                    });
-
-                }
-
+            if (count >= targetValue) {
+                count = targetValue;
+                clearInterval(timer);
             }
 
+            element.textContent = count + suffix;
+        }, 25);
+    };
+
+    const statsObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                counters.forEach(counter => {
+
+                    const value = counter.textContent.trim();
+
+                    if (value.includes("+")) {
+                        const num = parseInt(value.replace("+", ""));
+                        animateCounter(counter, num, "+");
+                    }
+
+                    else if (value.includes("%")) {
+                        const num = parseInt(value.replace("%", ""));
+                        animateCounter(counter, num, "%");
+                    }
+
+                    else {
+                        const num = parseInt(value);
+                        if (!isNaN(num)) {
+                            animateCounter(counter, num);
+                        }
+                    }
+
+                });
+
+                statsObserver.disconnect();
+            }
         });
-
     });
 
-    // ==========================
-    // Active Navbar Highlight
-    // ==========================
+    const statsSection = document.querySelector(".stats-section");
 
-    const currentPage =
-        window.location.pathname.split("/").pop();
+    if (statsSection) {
+        statsObserver.observe(statsSection);
+    }
 
-    const navItems =
-        document.querySelectorAll(".nav-links a");
+    // Navbar Background Effect
+    const navbar = document.querySelector(".navbar");
 
-    navItems.forEach(link => {
+    const navbarScrollEffect = () => {
+        if (!navbar) return;
 
-        const linkPage =
-            link.getAttribute("href").split("/").pop();
-
-        if (linkPage === currentPage) {
-
-            link.classList.add("active");
-
+        if (window.scrollY > 50) {
+            navbar.style.background = "rgba(15,23,42,0.95)";
+            navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,0.25)";
+        } else {
+            navbar.style.background = "rgba(15,23,42,0.75)";
+            navbar.style.boxShadow = "none";
         }
+    };
 
-    });
+    window.addEventListener("scroll", navbarScrollEffect);
+    navbarScrollEffect();
 
-    // ==========================
-    // Page Loaded Animation
-    // ==========================
-
+    // Page Load Animation
     document.body.style.opacity = "0";
 
     setTimeout(() => {
-
         document.body.style.transition = "opacity 0.8s ease";
         document.body.style.opacity = "1";
-
     }, 100);
-
-    // ==========================
-    // Workflow Animation
-    // ==========================
-
-    const workflowBoxes =
-        document.querySelectorAll(".workflow-box");
-
-    workflowBoxes.forEach((box, index) => {
-
-        box.style.opacity = "0";
-        box.style.transform = "translateY(20px)";
-
-        setTimeout(() => {
-
-            box.style.transition =
-                "all 0.6s ease";
-
-            box.style.opacity = "1";
-            box.style.transform =
-                "translateY(0px)";
-
-        }, index * 150);
-
-    });
-
-    // ==========================
-    // Console Welcome Message
-    // ==========================
-
-    console.log(
-        "🧠 NLP Knowledge Artifact Repository Loaded Successfully"
-    );
 
 });
