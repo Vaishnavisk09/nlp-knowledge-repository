@@ -87,7 +87,24 @@ body{
     font-size:1.3rem;
     font-weight:700;
 }
+.workflow-card{
+    padding:25px;
+    text-align:center;
+}
 
+.workflow-image{
+    width:100%;
+    max-width:1100px;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(56,189,248,.25);
+    transition:0.4s ease;
+}
+
+.workflow-image:hover{
+    transform:scale(1.02);
+}
 .nav-links{
     display:flex;
     list-style:none;
