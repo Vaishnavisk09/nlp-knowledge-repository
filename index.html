@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>NLP Knowledge Artifact Repository</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Comprehensive NLP Knowledge Artifact Repository covering concepts, workflows, applications, research trends, sustainability, and references.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ FIX: Center workflow -->
+    <style>
+        .workflow-flow{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .workflow-box{
+            padding: 12px 20px;
+            border-radius: 12px;
+        }
+
+        .workflow-arrow{
+            font-size: 20px;
+        }
+
+        .glass-card{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,22 +44,27 @@
 
 <header class="navbar">
     <div class="container nav-container">
-
         <a href="index.html" class="logo">
-            🧠 NLP Repository
+            <span class="logo-icon">🧠</span>
+            NLP Repository
         </a>
 
         <nav>
             <ul class="nav-links">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="pages/concepts.html">Concepts</a></li>
                 <li><a href="pages/comparison.html">Comparison</a></li>
                 <li><a href="pages/workflow.html">Workflow</a></li>
-                <li><a href="pages/research.html">Research</a></li>
                 <li><a href="pages/applications.html">Applications</a></li>
+                <li><a href="pages/research.html">Research</a></li>
+                <li><a href="pages/sustainability.html">Sustainability</a></li>
+                <li><a href="pages/contribution.html">Contribution</a></li>
+                <li><a href="pages/reflection.html">Reflection</a></li>
+                <li><a href="pages/references.html">References</a></li>
             </ul>
         </nav>
 
+        <button id="menu-toggle" class="menu-toggle">☰</button>
     </div>
 </header>
 
@@ -41,41 +73,85 @@
 <!-- HERO -->
 <section class="hero">
     <div class="container hero-grid">
-
         <div class="hero-content reveal">
 
             <span class="hero-badge">
-                AI • NLP • Knowledge Hub
+                Artificial Intelligence • NLP • Knowledge Hub
             </span>
 
             <h1>
-                NLP Knowledge <span>Repository</span>
+                NLP Knowledge
+                <span>Artifact Repository</span>
             </h1>
 
             <p>
-                A structured academic repository for Natural Language Processing,
-                transformers, embeddings, and modern AI systems.
+                A professional academic repository dedicated to Natural Language Processing,
+                language representation, machine learning workflows, transformer architectures,
+                modern Large Language Models, and sustainable AI-driven applications.
             </p>
 
             <div class="hero-buttons">
                 <a href="pages/concepts.html" class="hero-btn">🚀 Explore Concepts</a>
-                <a href="pages/research.html" class="hero-btn">🔬 Research</a>
+                <a href="pages/research.html" class="hero-btn">🔬 Latest Research</a>
             </div>
 
         </div>
-
     </div>
 </section>
 
-<!-- WORKFLOW -->
-<section class="workflow-preview">
+<!-- STATS -->
+<section class="stats-section">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Repository Statistics</h2>
+        </div>
 
+        <div class="stats-grid">
+            <div class="glass-card stat-card reveal"><h3>25+</h3><p>NLP Concepts</p></div>
+            <div class="glass-card stat-card reveal"><h3>5</h3><p>Applications</p></div>
+            <div class="glass-card stat-card reveal"><h3>3</h3><p>Workflow Models</p></div>
+            <div class="glass-card stat-card reveal"><h3>100%</h3><p>Academic Focus</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Core Knowledge Areas</h2>
+        </div>
+
+        <div class="card-grid">
+
+            <div class="glass-card feature-card reveal">
+                <h3>Fundamentals</h3>
+                <p>Tokenization, preprocessing, embeddings, TF-IDF, etc.</p>
+            </div>
+
+            <div class="glass-card feature-card reveal">
+                <h3>Applications</h3>
+                <p>Chatbots, translation, sentiment analysis, spam detection.</p>
+            </div>
+
+            <div class="glass-card feature-card reveal">
+                <h3>Research</h3>
+                <p>Transformers, GPT, BERT, RAG, multimodal AI.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ✅ WORKFLOW (CENTERED FIXED) -->
+<section class="workflow-preview">
     <div class="container">
 
-        <h2 class="section-title reveal">⚙️ NLP Workflow Preview</h2>
+        <div class="section-title reveal">
+            <h2>⚙️ NLP Workflow Preview</h2>
+        </div>
 
-        <div class="glass-card reveal workflow-card">
-
+        <div class="glass-card reveal">
             <div class="workflow-flow">
 
                 <div class="workflow-box">📄 Text</div>
@@ -93,16 +169,14 @@
                 <div class="workflow-box">🎯 Prediction</div>
 
             </div>
-
         </div>
 
     </div>
-
 </section>
 
 </main>
 
-<script src="script.js"></script>
-
 </body>
 </html>
+
+
