@@ -24,10 +24,21 @@ body{
     background:rgba(0,0,0,0.3);
 }
 
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
 .nav-links{
     display:flex;
-    gap:20px;
     list-style:none;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
 }
 
 /* HERO */
@@ -40,37 +51,51 @@ body{
     font-size:3rem;
 }
 
-/* BUTTONS */
+.hero p{
+    color:#CBD5E1;
+    margin:15px 0;
+}
+
 .hero-btn{
     display:inline-block;
     padding:12px 20px;
+    margin:10px;
     background:#38BDF8;
     color:white;
-    margin:10px;
     border-radius:8px;
     text-decoration:none;
 }
 
-/* WORKFLOW CENTER FIX */
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* WORKFLOW FIX (CENTER PERFECT) */
+.workflow-card{
+    display:flex;
+    justify-content:center;
+}
+
 .workflow-flow{
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
     gap:10px;
-    margin-top:20px;
 }
 
 .workflow-box{
     background:#1E293B;
-    padding:12px 20px;
+    padding:12px 22px;
     border-radius:10px;
+    width:220px;
     text-align:center;
-    width:200px;
 }
 
 .workflow-arrow{
-    font-size:20px;
+    font-size:18px;
+    color:#38BDF8;
 }
 
 /* GLASS CARD */
@@ -79,7 +104,6 @@ body{
     padding:25px;
     border-radius:15px;
     margin-top:20px;
-    text-align:center;
 }
 
 /* BACKGROUND GLOW */
@@ -102,4 +126,10 @@ body{
     background:#22C55E;
     bottom:-50px;
     right:-50px;
+}
+
+/* REVEAL SAFE (NO BLANK PAGE ISSUE) */
+.reveal{
+    opacity:1 !important;
+    transform:none !important;
 }
