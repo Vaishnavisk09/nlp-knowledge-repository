@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection | NLP Knowledge Artifact Repository</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+            🧠 NLP Repository
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="concepts.html">Concepts</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="workflow.html">Workflow</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="contribution.html">Contribution</a></li>
+                <li><a href="reflection.html" class="active">Reflection</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+
+    </div>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1>📖 Project Reflection</h1>
+        <p>
+            Individual learning outcomes, experiences, and reflections gained
+            during the development of the NLP Knowledge Artifact Repository.
+        </p>
+    </div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="content-grid">
+
+<div class="glass-card content-card reveal">
+
+<h2>👩‍💻 Member 1 Reflection</h2>
+
+<h3>Vaishnavi Sanjay Kadam</h3>
+
+<p>
+During the development of the NLP Knowledge Artifact Repository, I learned
+various concepts of Natural Language Processing such as text preprocessing,
+sentence segmentation, tokenization, stemming, lemmatization, TF-IDF,
+word embeddings, language models, and transformer architectures.
+</p>
+
+<p>
+Researching these topics helped me understand how machines process human
+language and convert raw text into meaningful information. I explored
+different NLP applications including chatbots, machine translation,
+sentiment analysis, spam detection, and text summarization.
+</p>
+
+<p>
+This project also improved my research skills, content organization,
+technical documentation abilities, and understanding of Artificial
+Intelligence technologies. Designing educational content for a website
+helped me learn how to present technical information in a structured,
+professional, and user-friendly format.
+</p>
+
+<p>
+Working collaboratively enhanced my communication and teamwork skills.
+Overall, this project strengthened my academic knowledge and increased
+my interest in advanced NLP and AI technologies.
+</p>
+
+<hr>
+
+<p><strong>Name:</strong> Vaishnavi Sanjay Kadam</p>
+<p><strong>Roll No:</strong> 36</p>
+<p><strong>PRN:</strong> 124BTCM1013</p>
+<p><strong>Division:</strong> TYCM2</p>
+
+</div>
+
+<div class="glass-card content-card reveal">
+
+<h2>👨‍💻 Member 2 Reflection</h2>
+
+<h3>Maher Dhami</h3>
+
+<p>
+Through this project, I gained valuable knowledge about Natural Language
+Processing and its growing importance in modern Artificial Intelligence.
+I learned about feature extraction techniques, language representation,
+embeddings, transformer models, and recent innovations such as BERT,
+GPT, Large Language Models, and Retrieval-Augmented Generation.
+</p>
+
+<p>
+Creating workflow diagrams and comparison tables helped me understand
+the practical implementation of NLP systems and how different techniques
+are used to solve language-related problems. I also improved my skills
+in website organization, information visualization, and technical
+presentation.
+</p>
+
+<p>
+The project provided hands-on experience in collaborative development,
+planning, content management, and quality assurance. It taught me the
+importance of combining theoretical understanding with practical
+implementation while developing educational resources.
+</p>
+
+<p>
+Overall, this experience enhanced both my technical knowledge and
+teamwork abilities while giving me deeper insight into modern AI-driven
+language technologies.
+</p>
+
+<hr>
+
+<p><strong>Name:</strong> Maher Dhami</p>
+<p><strong>Roll No:</strong> 20</p>
+<p><strong>PRN:</strong> 124BTCM1120</p>
+<p><strong>Division:</strong> TYCM2</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="glass-card content-card reveal">
+
+<h2>🎯 Key Learning Outcomes</h2>
+
+<div class="content-grid">
+
+<div>
+<h3>📚 Technical Learning</h3>
+<ul>
+<li>Natural Language Processing Fundamentals</li>
+<li>Text Preprocessing Techniques</li>
+<li>Feature Engineering Methods</li>
+<li>Transformer Architectures</li>
+<li>Language Models and LLMs</li>
+<li>Real-World NLP Applications</li>
+</ul>
+</div>
+
+<div>
+<h3>💡 Professional Skills</h3>
+<ul>
+<li>Research and Documentation</li>
+<li>Website Development</li>
+<li>Team Collaboration</li>
+<li>Content Organization</li>
+<li>Problem Solving</li>
+<li>Project Planning</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+
+    <div class="footer-content container">
+
+        <div>
+            <h3>🧠 NLP Knowledge Artifact Repository</h3>
+            <p>
+                Reflection and learning outcomes achieved during the
+                development of this academic NLP project.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="workflow.html">Workflow</a>
+            <a href="research.html">Research</a>
+            <a href="contribution.html">Contribution</a>
+            <a href="references.html">References</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 NLP Knowledge Artifact Repository</p>
+    </div>
+
+</footer>
+
+<button id="backToTop" class="back-to-top">↑</button>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
