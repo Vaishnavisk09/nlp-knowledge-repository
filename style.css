@@ -75,7 +75,7 @@ body{
 }
 .hero-image{
     width:100%;
-    max-width:500px;
+    max-width:400px;
     height:auto;
     border-radius:15px;
     display:block;
