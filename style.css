@@ -73,14 +73,7 @@ body{
     background:rgba(15,23,42,.85);
     border-bottom:1px solid var(--border);
 }
-.hero-image{
-    width:100%;
-    max-width:300px;
-    height:auto;
-    border-radius:15px;
-    display:block;
-    margin-top:20px;
-}
+
 .nav-container{
     display:flex;
     justify-content:space-between;
@@ -121,70 +114,81 @@ body{
     cursor:pointer;
 }
 
-/* Hero */
+/* =========================
+   HERO FINAL FIX (NO OVERLAP)
+========================= */
 
 .hero{
     min-height:85vh;
     display:flex;
     align-items:center;
-    text-align:center;
+    justify-content:center;
+    text-align:left;
 }
 
-.hero h1{
-    font-size:3rem;
-    margin-bottom:20px;
-    background:linear-gradient(
-    90deg,
-    #38BDF8,
-    #22C55E,
-    #60A5FA);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+.hero-grid{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    width:100%;
 }
 
-.hero p{
-    color:var(--muted);
-    font-size:1.1rem;
-    margin-bottom:30px;
+/* LEFT SIDE */
+.hero-content{
+    flex:1;
+    max-width:600px;
+    min-width:280px;
 }
+
+/* RIGHT SIDE IMAGE FIXED */
+.hero-visual{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width:300px;
+}
+
+/* IMAGE CARD (IMPORTANT) */
+.hero-image{
+    width:420px;
+    max-width:100%;
+    height:auto;
+    border-radius:18px;
+    display:block;
+    object-fit:cover;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+/* BUTTONS */
 .hero-buttons{
     display:flex;
     gap:15px;
     flex-wrap:wrap;
     margin-top:25px;
 }
-.hero-grid{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:40px;
-    flex-wrap:wrap;   /* important for responsiveness */
-}
-.hero-content{
-    flex:1;
-    min-width:300px;
-}
 
-.hero-visual{
-    flex:1;
-    min-width:300px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+/* RESPONSIVE FIX */
+@media(max-width:900px){
 
+    .hero{
+        text-align:center;
+    }
 
-.hero-btn{
-    display:inline-block;
-    padding:14px 28px;
-    background:linear-gradient(
-    90deg,
-    var(--primary),
-    var(--secondary));
-    border-radius:10px;
-    color:white;
-    text-decoration:none;
-    font-weight:600;
+    .hero-grid{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .hero-content{
+        max-width:100%;
+    }
+
+    .hero-image{
+        width:90%;
+    }
 }
 
 /* Sections */
