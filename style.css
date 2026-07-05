@@ -122,6 +122,13 @@ body{
     align-items:center;
     text-align:center;
 }
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
 
 .hero h1{
     font-size:3rem;
