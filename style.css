@@ -131,13 +131,13 @@ body{
 }
 
 .hero-grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr; /* STRICT 2 COLUMNS */
-    gap:60px;
-    align-items:center;
-    width:100%;
+    display:block;
 }
-
+.hero-visual{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+}
 /* LEFT SIDE */
 .hero-content{
     max-width:600px;
