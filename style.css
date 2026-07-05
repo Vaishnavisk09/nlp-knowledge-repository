@@ -262,42 +262,51 @@ tr:nth-child(even){
     background:rgba(255,255,255,.03);
 }
 
-/* Workflow */
+/* =========================
+   WORKFLOW (HORIZONTAL FIX)
+========================= */
 
-.workflow{
+.workflow-flow{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;   /* makes it horizontal */
     align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;       /* keeps responsive */
     gap:10px;
     margin-top:30px;
 }
 
+/* workflow box adjusted for horizontal flow */
 .workflow-box{
-    width:320px;
+    width:200px;   /* slightly reduced for horizontal layout */
     text-align:center;
     padding:15px;
     border-radius:12px;
     background:linear-gradient(
-    135deg,
-    rgba(56,189,248,.15),
-    rgba(37,99,235,.15));
+        135deg,
+        rgba(56,189,248,.15),
+        rgba(37,99,235,.15)
+    );
     border:1px solid rgba(56,189,248,.3);
     font-weight:600;
 }
 
+/* arrows between boxes */
 .workflow-arrow{
     font-size:1.8rem;
     color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.workflow-note{
-    margin-top:20px;
+/* mobile responsiveness fix */
+@media(max-width:900px){
+    .workflow-box{
+        width:150px;
+        font-size:0.9rem;
+    }
 }
-
-.workflow-note h3{
-    color:var(--accent);
-}
-
 /* Timeline */
 
 .timeline{
