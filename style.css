@@ -265,9 +265,8 @@ tr:nth-child(even){
 /* =========================
    WORKFLOW (HORIZONTAL FIX)
 ========================= */
-
 /* =========================
-   WORKFLOW (FORCED HORIZONTAL PIPELINE)
+   WORKFLOW (HORIZONTAL PIPELINE FIXED)
 ========================= */
 
 .workflow-flow{
@@ -275,9 +274,9 @@ tr:nth-child(even){
     flex-direction:row;
     align-items:center;
     justify-content:center;
-    flex-wrap:nowrap;   /* IMPORTANT: prevents breaking flow */
-    gap:8px;
-    overflow-x:auto;    /* allows scroll on small screens */
+    flex-wrap:nowrap;     /* keep single row */
+    gap:10px;
+    overflow-x:auto;      /* scroll if screen is small */
     padding:20px 10px;
 }
 
@@ -302,18 +301,22 @@ tr:nth-child(even){
     font-size:1.8rem;
     color:var(--accent);
     flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-/* optional hover */
+/* hover effect */
 .workflow-box:hover{
     transform:translateY(-5px);
     transition:0.3s;
 }
 
-/* mobile */
-@media(max-width:768px){
+/* MOBILE SAFE FIX (IMPORTANT) */
+@media(max-width:900px){
     .workflow-box{
         min-width:140px;
+        width:auto;   /* ❗ overrides your old width:100% bug */
         font-size:0.9rem;
     }
 }
