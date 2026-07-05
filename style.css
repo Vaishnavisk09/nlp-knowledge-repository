@@ -75,9 +75,11 @@ body{
 }
 .hero-image{
     width:100%;
+    max-width:500px;
     height:auto;
     border-radius:15px;
     display:block;
+    margin-top:10px;
 }
 .nav-container{
     display:flex;
@@ -148,10 +150,30 @@ body{
 .hero-buttons{
     display:flex;
     gap:15px;
-    justify-content:center;
     flex-wrap:wrap;
     margin-top:25px;
 }
+.hero-grid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;   /* important for responsiveness */
+}
+.hero-content{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-visual{
+    flex:1;
+    min-width:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
 .hero-btn{
     display:inline-block;
     padding:14px 28px;
