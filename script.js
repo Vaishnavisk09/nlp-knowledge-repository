@@ -218,26 +218,26 @@ document.addEventListener("DOMContentLoaded", () => {
     // Workflow Animation
     // ==========================
 
-    const workflowBoxes =
-        document.querySelectorAll(".workflow-box");
+    //const workflowBoxes =
+     //   document.querySelectorAll(".workflow-box");
 
-    workflowBoxes.forEach((box, index) => {
+  //  workflowBoxes.forEach((box, index) => {
 
-        box.style.opacity = "0";
-        box.style.transform = "translateY(20px)";
+  //      box.style.opacity = "0";
+   //     box.style.transform = "translateY(20px)";
 
-        setTimeout(() => {
+     //   setTimeout(() => {
 
-            box.style.transition =
-                "all 0.6s ease";
+     //       box.style.transition =
+     //           "all 0.6s ease";
 
-            box.style.opacity = "1";
-            box.style.transform =
-                "translateY(0px)";
+     //       box.style.opacity = "1";
+    //      box.style.transform =
+     //           "translateY(0px)";
 
-        }, index * 150);
+    //    }, index * 150);
 
-    });
+  //  });
 
     // ==========================
     // Console Welcome Message
