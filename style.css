@@ -128,8 +128,4 @@ body{
     right:-50px;
 }
 
-/* REVEAL SAFE (NO BLANK PAGE ISSUE) */
-.reveal{
-    opacity:1 !important;
-    transform:none !important;
-}
+
